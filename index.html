@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Benjamin Blattberg, Web Developer</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      .jumbotron {
+        background: yellow;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      .jumbo-body {
+        background: white;
+      }
+      .label-info {
+        background: yellow;
+        color: black;
+        padding-right: 1em;
+        margin-right: 1em;
+        padding-left: 1em;
+        margin-left: 1em;
+      }
+      .navbar a {
+        font-size: 1.5em;
+        padding-right: 1em;
+        padding-left: 1em;
+      }
+      .navbar li {
+        padding-right: 2em;
+      }
+      footer {
+        color: white;
+        background-color: black;
+        
+        padding-top: 2em;
+        height:3m;
+	      width: 100%;
+	     position:absolute;
+      	bottom:0;
+      	left:0;
+      	      bottom:0;
+	      left:0;
+      }
+      body {
+        position: relative;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#resume">Resume</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h2>I'm <b>Benjamin Blattberg.</b>        <br>I'm a <b>web developer.</b>        <br>This is <b>my portfolio.</b></h2>
+      </div>
+    </div>
+    <div class="jumbotron jumbo-body clearfix">
+      <div class="row" id="about">
+        <div class="col-md-2">
+          <span class="pull-left label label-info"><h2>&nbsp;Who <br>&nbsp;I Am&nbsp;</h2></span>
+        </div>
+        <div class="col-md-10">
+          <p class="text-left">I'm a trained educator and writer turned web developer. After spending several years in academia—and achieving my dream of teaching a class on 19th-century science fiction—I got into digital humanities studies, which turned me back on to my love of computer programming.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-10">
+          <p class="text-left">My goal is to design and write code that's performant and beautiful. I'm passionate about working in a community that values innovation and collaboration.</p>
+          <p class="text-left">I have experience with Ruby, Ruby on Rails, JavaScript, jQuery, test-driven development, database design, and other languages, frameworks, and patterns.</p>
+        </div>
+        <div class="col-md-2">
+          <span class="pull-left label label-info"><h2>What <br>I Do</h2></span>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row" id="projects">
+        <div class="col-lg-4">
+          <h2>Projects</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>ShareCare</h2></span>
+          <h4>&mdash; a Rails-based app for collaborative caretaking</h4>
+          <p class="text-left">ShareCare was developed to solve the problem of how several people could arrange and communicate about caretaking tasks. <span class="small">(Essentially: how could my girlfriend and I keep track of what our puppy needed.)</span></p>
+          <p class="text-left">With a Rails core, ShareCare allows users to sign in securely and manage both their "caring teams" and the tasks for those teams, utilizing RESTful routing and CRUD methods for several models.</p>
+          <p class="text-center">
+          <a href="https://www.flickr.com/photos/39561033@N00/15622221529" title="ShareCare user page"><img src="https://farm8.staticflickr.com/7483/15622221529_179b2d4f78_n.jpg" width="320" height="189" alt="ShareCare user page"></a>
+           <a href="https://www.flickr.com/photos/39561033@N00/15809609902" title="ShareCare team page with tasks"><img src="https://farm8.staticflickr.com/7505/15809609902_7e4597dc76_n.jpg" width="320" height="189" alt="ShareCare team page with tasks"></a>
+           </p>
+          <p class="text-left">Tech stack: Ruby, Rails, JavaScript, jQuery, HTML, CSS, and Foundation; with an emphasis on AJAX calls and transactions scripts.</p>
+          <p class="text-left"><a href="https://github.com/benjaminjb/sharecare">Code on Gihub</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Shush!</h2></span>
+          <h4>&mdash; a Google Chrome extension for blocking tweets and avoiding spoilers</h4>
+          <p class="text-left">Shush! was developed to allow people to go to Twitter without fear of spoilers. Rather than block or mute people entirely (and thus miss on all their tweets) or rely on some pre-set words to avoid, Shush! allows users to input words to avoid and will block tweets with those words.</p>
+          <p class="text-left">Built entirely with standard JavaScript and jQuery&mdash;and fully using several of the Google chrome.extension.* API&mdash;Shush! remembers lists of blocked words and continually processes tweets as they appear on the screen.</p>
+          <p class="text-center">
+          <a href="https://www.flickr.com/photos/39561033@N00/15806031881" title="Shush! open pop up"><img src="https://farm9.staticflickr.com/8608/15806031881_12664dc183_n.jpg" width="320" height="213" alt="Shush! open pop up"></a>
+          <a href="https://www.flickr.com/photos/39561033@N00/15622719087" title="Shush! showing change to Twitter"><img src="https://farm8.staticflickr.com/7558/15622719087_39effd3d95_n.jpg" width="320" height="213" alt="Shush! showing change to Twitter"></a>
+          </p>
+          <p class="text-left">Tech stack: JavaScript (including Mutation Observers), jQuery, HTML, CSS, and Google chrome.extension.* API; with an emphasis on preserving good design principles that adhere to the particular architecture of Chrome extensions.</p>
+          <p class="text-left">(For more on the process, see my code blog: <a href="http://incrementalcode.blogspot.com/2014/11/makersquare-day-49-how-to-make-chrome.html">general discussion on Chrome extensions</a> and <a href="http://incrementalcode.blogspot.com/2014/11/makersquare-day-50-how-to-make-chrome.html">more technical discussion</a>.)</p>
+          <p class="text-left">Available on the <a href="https://chrome.google.com/webstore/detail/shush/bkphldojjhhknjgafgpgahebiefkogog">Google Chrome Store</a></p>
+          <p class="text-left"><a href="https://github.com/benjaminjb/twitterblocker/">Code on Gihub</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Efficient Errands</h2></span>
+          <h4>&mdash; a Sinatra-based app for planning your errands efficiently by finding the shortest route</h4>
+          <p class="text-left">For a two-day hackathon at MakerSquare, less than midway through the program, three other developers and I planned, designed, and executed this app that allows users to enter addresses and then returns an efficiently ordered route taking in all of those addresses.</p>
+          <p class="text-left">My role was (1) to create the algorithm that would solve that Traveling Salesman Problem (though in the time given, we decided to use Google Map's built-in Waypoints algorithm); and (2) to assist in user experience design.</p>
+          <p class="text-center">
+            <a href="https://www.flickr.com/photos/39561033@N00/15187917794" title="Eff Errands user input"><img src="https://farm6.staticflickr.com/5612/15187917794_424812c711.jpg" width="300" height="172" alt="Eff Errands user input"></a>
+            <a href="https://www.flickr.com/photos/39561033@N00/15188433633" title="Eff Errands output"><img src="https://farm8.staticflickr.com/7470/15188433633_6a8c72f04c.jpg" width="300" height="172" alt="Eff Errands output"></a>
+          </p>
+          <p class="text-left">Tech stack: Ruby, Sinatra, JavaScript, jQuery, HTML, CSS, Google Maps API.</p>
+          <p>(For more on the process, read my blog posts on our hackathon: <a href="http://incrementalcode.blogspot.com/2014/09/makersquare-day-22-hackathon-day-one.html">day one</a> and <a href="http://incrementalcode.blogspot.com/2014/09/makersquare-day-22-hackathon-day-two.html">day two</a>.)</p>
+          <p class="text-left"><a href="github.com/kizzle102/EffErrands">Code on Gihub</a></p>
+        </div>
+      </div>
+      <hr>
+    </div>
+                
+
+    <div class="container">
+      <div class="row" id="resume">
+        <div class="col-lg-4">
+          <h2>Resume</h2><h4>(click <a href="https://s3.amazonaws.com/projects.divshot.com/benjaminjb/a2602d85050065803fd92a63470be55e793d2ba4adf9387c8847ae28b098ad02/Blattberg_Resume_Nov.pdf?AWSAccessKeyId=ASIAJWP3VWASAEQGWKCQ&Expires=1416223903&Signature=p3bSl94r9btCenfPLJ3%2F%2FTvrhQQ%3D&x-amz-security-token=AQoDYXdzEOX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaoAXn4pcoOeHsDpXY3qRTeuSb204lmmsF5Y2W3gYbZ2mQ8wOeJt5Alh%2FlxNOoqeee6rGXjGDdhw7OCYyeVvQrH23v%2Bn3Wqod2PLd88k6BiQO3IsHAHnkVQn6G3BDkyK1yQEhf8RJKf9HCfJT21dAirF2W2%2BZpynlQ5MBUC2r44GSBHGU1A1bM%2FgixrYurCTn5J6aJj16qlmA2h3anoMtoUIlFsNvc9pdfggFSlGFwTQht%2Fk6FGwY%2FlMrWX%2Bhf%2Fau5q%2Fq7d1MDg4TH6rMzP%2BcnyXAghCLdbJVa3y3PNPSb649Sxt1%2FQTAmJ%2FhHjsfgbEA2wDazht9FYAJwGVUh9%2FBJBPuWlMhhxg5JStOglv7urxw1QruKqNUd44w4t1UmvCxFYt5%2F3a2XHot8XSkhbZpfuZlbgqsyPAhf2e1hiCyRlx8dikyDOiljOlG%2FqYPxVmXolVPbs73Akd%2FJbR6U4aE%2F%2BI43SD%2BGPesvC73FSabYpY2mBmN2kEXPu1oqkRWydjWW%2Ffa1cQujBl82Ugk9U3mRGrE1CubKq9qxDXzolkEgdiFLRHdwRseuCFI0Khc89W5EYRdfumPig5Ikwg7APuZmun%2F7H%2FOw0V52hNVUeHPoVQQXZlGQvQWey%2B%2BsKEc6nZVeSn7%2BEH3fciBl4%2BEEAkx59rJXOV3xWBG9JerTErzAixLfL%2F1vLR6IeCBB7o0eZFMiAF4JJUCxAHllIG4bLfVnVkopBwtUM14I9RxWBf5SNSFuB03EJhJHARdZU3qYK5Em%2B%2BocxsR9pxyRW94%2BakqAy9xvQqFKHRjCMMXB9Fc0jTmkvls5V825Oej82T0s0BaPt%2F5myOjSk6%2BOwBrKG3qKS%2FzqmArhZWRYGVo9JNCrDjcvPGDHUfuP%2BcgiyZWTp8ziOJYgudWlowU%3D">here for pdf version</a>)</h4>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Skillset</h2></span>
+          Ruby • Ruby on Rails • Sinatra • Test-Driven Development • RSpec • JavaScript • jQuery • Modular Design • Chrome Extension Architecture • SQL/PostgreSQL • ActiveRecord • HTML • CSS • Foundation • Algorithms • Git Version Control • MVC Principles • Composition and Communication
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Selected Projects and Achievements</h2></span>
+          <ul>
+            <li>
+              ShareCare: a Rails-based app for sharing team-oriented tasks, focused on caretaking
+              <ul>
+                <li>
+                  Tech stack: Ruby, Rails, JavaScript, jQuery, HTML, CSS, Foundation.
+                </li>
+                <li>
+                  Designed SQLite database models with ActiveRecord for fast performance.
+                </li>
+                <li>
+                  Implemented RESTful routing with multiple models and user security. 
+                </li>
+              </ul>
+            </li>
+            <li>
+              Shush!: a Chrome extension for blocking spoilers on Twitter based on user input
+              <ul>
+                <li>
+                  Tech stack: JavaScript, jQuery, chrome.extension* API, JS Mutation Observers.
+                </li>
+                <li>
+                  Researched and adhered to best practices for Chrome extension architecture.
+                </li>
+                <li>
+                  Extended project to continuously monitor tweets with new technology.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Efficient Errands: a Ruby app for mapping efficient routes, developed with three other developers
+              <ul>
+                <li>
+                  Tech stack: Ruby, Sinatra, JavaScript, jQuery, Google Maps API.
+                </li>
+                <li>
+                  A group hackathon project written with three other developers.
+                </li>
+                <li>
+                  Role: Traveling Salesman Problem solution algorithm development and user interface.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Accepted into and excelled at MakerSquare, an immersive accelerated learning program for web development.
+            </li>
+            <li>
+              Completed the improvisation and comedy writing tracks at the Second City (Chicago).
+            </li>
+            <li>
+              Publications in and presentations to the Science Fiction Research Association, University of Chicago English Conference, New York Review of Science Fiction, Bard Journal of Social Sciences, and multiple online venues.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Education</h2></span>
+          <p><strong>MakerSquare Development Bootcamp</strong>, Graduate of the Full-Time Accelerated Learning Program</p>
+          <p><strong>University of Chicago</strong>, MA in English</p>
+          <p><strong>Bard College</strong>, BA in Literature</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <span class="pull-left label label-info"><h2>Work History</h2></span>
+          <p>
+            <strong>Kirkus Media</strong> • 2012—present
+            <br><strong>Book Reviewer</strong>&mdash;Reviewed books according to house style, writing for clarity and directness in succinct format.
+          </p>
+          <p>
+            <strong>Shmoop University, Inc.</strong> • 2010—2013
+            <br><strong>Literature Content Provider</strong>&mdash;Wrote accessible, humorous student study guides for online use; continually liasioned with editorial staff to maintain channels of communication.
+          </p>
+          <p>
+            <strong>University of Chicago</strong> • 2005—2010
+            <br><strong>Composition Instructor</strong>&mdash;Taught composition, rhetoric, and argument; responsible for leading discussion and ensuring clarity of material.
+            <br><strong>Lecturer</strong>&mdash;Designed and taught course on science fiction in the 19th century, the first of its kind at the University of Chicago.
+          </p>
+          <p>
+            <strong>Regenstein Library</strong> • 2004-2009
+            <br><strong>Digital Imaging Technician</strong>&mdash;Scanned delicate archival materials, responding to fluctuating demands and priorities.
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+ 
+    <div id="contact" class="jumbotron clearfix">
+      <div class="row">
+        <div class="col-md-2">Contact me, follow me, see what I'm up to on:
+        </div>
+        <div class="col-md-2">
+          <a href="www.linkedin.com/in/benjaminjb"><i class="fa fa-linkedin fa-4x"></i><p><label>LinkedIn</label></p></a>
+        </div>
+        <div class="col-md-2">
+          <a href="www.github.com/benjaminjb"><i class="fa fa-github fa-4x"></i><p><label>Github</label></p></a>
+        </div>
+        <div class="col-md-2">
+          <a href="incrementalcode.blogspot.com"><i class="fa fa-quote-left fa-4x"></i><p><label>Code Blog</label></p></a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://twitter.com/inCatastrophe"><i class="fa fa-twitter fa-4x"></i><p><label>Twitter</label></p></a>
+        </div>
+        <div class="col-md-2">
+          <a href="mailto:benjamin.blattberg@gmail.com"><i class="fa fa-envelope-o fa-4x"></i><p><label>Email Me</label></p></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; Benjamin Blattberg 2014</p>
+    </footer>
+  </body>
+</html>
